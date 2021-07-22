@@ -4,7 +4,7 @@ SPA which searchs music.<br>
 ## USED TECHNIQUES<br>
 FRAMEWORK - React<br>
 METHODS - ReactHooks(useState,useEffect),axio<br>
-## URL:https://altperson.github.io/coronaVirusStats//<br>
+## URL:https://altperson.github.io/musicSPA/<br>
 ## BRANCHES<br>
 MASTER - Source code of Project<br>
 GH-PAGES - Builded version
