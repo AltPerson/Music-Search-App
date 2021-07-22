@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/AltPerson/musicSPA.git/static/css/main.8fc7430c.chunk.css",
+    "main.js": "/AltPerson/musicSPA.git/static/js/main.1dbd4fd9.chunk.js",
+    "main.js.map": "/AltPerson/musicSPA.git/static/js/main.1dbd4fd9.chunk.js.map",
+    "runtime-main.js": "/AltPerson/musicSPA.git/static/js/runtime-main.378dec4d.js",
+    "runtime-main.js.map": "/AltPerson/musicSPA.git/static/js/runtime-main.378dec4d.js.map",
+    "static/css/2.ab75b8d7.chunk.css": "/AltPerson/musicSPA.git/static/css/2.ab75b8d7.chunk.css",
+    "static/js/2.50cb09e8.chunk.js": "/AltPerson/musicSPA.git/static/js/2.50cb09e8.chunk.js",
+    "static/js/2.50cb09e8.chunk.js.map": "/AltPerson/musicSPA.git/static/js/2.50cb09e8.chunk.js.map",
+    "index.html": "/AltPerson/musicSPA.git/index.html",
+    "static/css/2.ab75b8d7.chunk.css.map": "/AltPerson/musicSPA.git/static/css/2.ab75b8d7.chunk.css.map",
+    "static/css/main.8fc7430c.chunk.css.map": "/AltPerson/musicSPA.git/static/css/main.8fc7430c.chunk.css.map",
+    "static/js/2.50cb09e8.chunk.js.LICENSE.txt": "/AltPerson/musicSPA.git/static/js/2.50cb09e8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.378dec4d.js",
+    "static/css/2.ab75b8d7.chunk.css",
+    "static/js/2.50cb09e8.chunk.js",
+    "static/css/main.8fc7430c.chunk.css",
+    "static/js/main.1dbd4fd9.chunk.js"
+  ]
+}
