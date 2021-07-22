@@ -1,0 +1,36 @@
+.listItem {
+  border: 1px solid #e57439;
+  flex: 0 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.info {
+  padding: 10px 0;
+}
+
+.listItem__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.info__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.info__subtitle {
+  font-size: 12px;
+  width: 300px;
+  word-wrap: wrap;
+}
+
+.options-link {
+  color: black;
+}
+.options-link__info {
+  font-size: 24px;
+}
