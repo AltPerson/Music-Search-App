@@ -1,6 +1,6 @@
 # Music Search App<br>
 ## DESCRIPTION<br>
-SPA which searchs musi<br>
+SPA which searchs music.<br>
 ## USED TECHNIQUES<br>
 FRAMEWORK - React<br>
 METHODS - ReactHooks(useState,useEffect),axio<br>
