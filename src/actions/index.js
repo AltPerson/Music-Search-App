@@ -1,16 +1,14 @@
-const API_KEY = "f090d06f30msha26f9cbd9f5c41ep17a673jsnc917077c7ee8";
-const API_HOST = "deezerdevs-deezer.p.rapidapi.com";
-
 const axios = require("axios").default;
 
 export function fetchData(query) {
+  console.log(process.env.REACT_APP_API_KEY);
   const options = {
     method: "GET",
     url: "https://deezerdevs-deezer.p.rapidapi.com/search",
     params: { q: query ? query : "ШУММ" },
     headers: {
-      "x-rapidapi-key": API_KEY,
-      "x-rapidapi-host": API_HOST,
+      "x-rapidapi-key": process.env.REACT_APP_API_KEY,
+      "x-rapidapi-host": process.env.REACT_APP_API_HOST,
     },
   };
   const albumsData = axios
@@ -29,8 +27,8 @@ export function fetchAlbumData(id) {
     method: "GET",
     url: `https://deezerdevs-deezer.p.rapidapi.com/album/${id}`,
     headers: {
-      "x-rapidapi-key": API_KEY,
-      "x-rapidapi-host": API_HOST,
+      "x-rapidapi-key": process.env.REACT_APP_API_KEY,
+      "x-rapidapi-host": process.env.REACT_APP_API_HOST,
     },
   };
   const albumData = axios
