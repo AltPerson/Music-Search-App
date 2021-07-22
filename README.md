@@ -23,3 +23,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+### P.S - In file /actions/index.js, need to change values of process.env.REACT_APP_API_KEY and process.env.REACT_APP_API_HOST, from https://rapidapi.com/deezerdevs/api/deezer-1
