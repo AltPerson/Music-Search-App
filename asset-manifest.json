@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/musicSPA/static/css/main.c09dc4d7.chunk.css",
-    "main.js": "/musicSPA/static/js/main.b0e000d8.chunk.js",
-    "main.js.map": "/musicSPA/static/js/main.b0e000d8.chunk.js.map",
+    "main.js": "/musicSPA/static/js/main.0fb726ac.chunk.js",
+    "main.js.map": "/musicSPA/static/js/main.0fb726ac.chunk.js.map",
     "runtime-main.js": "/musicSPA/static/js/runtime-main.3c5de291.js",
     "runtime-main.js.map": "/musicSPA/static/js/runtime-main.3c5de291.js.map",
     "static/css/2.ab75b8d7.chunk.css": "/musicSPA/static/css/2.ab75b8d7.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.ab75b8d7.chunk.css",
     "static/js/2.50cb09e8.chunk.js",
     "static/css/main.c09dc4d7.chunk.css",
-    "static/js/main.b0e000d8.chunk.js"
+    "static/js/main.0fb726ac.chunk.js"
   ]
 }
