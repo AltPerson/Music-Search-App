@@ -8,6 +8,7 @@ export default function NavBar({
   setInputValue,
   isHome,
   isSingle,
+  getData,
 }) {
   return (
     <nav className="navbar">
@@ -19,15 +20,17 @@ export default function NavBar({
         <h5 className="navbar-link__title">Music App</h5>
       </Link>
       {isHome ? (
-        <div className="navbar-search search">
-          <input
-            type="search"
-            value={inputValue}
-            className="search__input"
-            onChange={(e) => setInputValue(e.target.value)}
-          />
-          <BsSearch className="search__icon" />
-        </div>
+        <>
+          <div className="navbar-search search">
+            <input
+              type="search"
+              value={inputValue}
+              className="search__input"
+              onChange={(e) => setInputValue(e.target.value)}
+            />
+            <BsSearch className="search__icon" />
+          </div>
+        </>
       ) : (
         <div className="navbar-description">
           <h1 className="navbar-description__title">

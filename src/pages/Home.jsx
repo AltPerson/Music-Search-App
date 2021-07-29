@@ -10,28 +10,35 @@ function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    if ((data.length === 0) & (query.length === 0)) {
+  const getData = () => {
+    if (data.length === 0 || query.length === 0) {
       setIsLoading(true);
       fetchData(query).then((response) => {
-        setIsLoading(false);
-        setData(response.data);
+        if (!response.data.error) {
+          setIsLoading(false);
+          setData(response.data.data);
+        } else {
+          getData();
+        }
       });
     } else {
       fetchData(query).then((response) => {
-        setData(response.data);
+        if (!response.data.error) {
+          setIsLoading(false);
+          setData(response.data.data);
+        } else {
+          getData();
+        }
       });
     }
+  };
+  useEffect(() => {
+    getData();
   }, [query]);
+
   return isLoading ? (
     <div className="contaier loader">
-      <Loader
-        type="Bars"
-        color="#e57439"
-        height={100}
-        width={100}
-        timeout={3000}
-      />
+      <Loader type="Bars" color="#e57439" height={100} width={100} />
     </div>
   ) : (
     <>

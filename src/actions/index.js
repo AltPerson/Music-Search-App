@@ -1,11 +1,10 @@
 const axios = require("axios").default;
 
 export function fetchData(query) {
-  console.log(process.env.REACT_APP_API_KEY);
   const options = {
     method: "GET",
     url: "https://deezerdevs-deezer.p.rapidapi.com/search",
-    params: { q: query ? query : "ШУММ" },
+    params: { q: query !== "" ? query : "ШУММ" },
     headers: {
       "x-rapidapi-key": process.env.REACT_APP_API_KEY,
       "x-rapidapi-host": process.env.REACT_APP_API_HOST,
@@ -14,7 +13,7 @@ export function fetchData(query) {
   const albumsData = axios
     .request(options)
     .then((response) => {
-      return response.data;
+      return response;
     })
     .catch((e) => {
       console.log(e);
@@ -34,7 +33,7 @@ export function fetchAlbumData(id) {
   const albumData = axios
     .request(options)
     .then((response) => {
-      return response.data;
+      return response;
     })
     .catch((e) => {
       console.log(e);

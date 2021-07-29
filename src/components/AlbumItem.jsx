@@ -16,7 +16,7 @@ function AlbumItem({ src, title, artist, date, tracks }) {
             <h4 className="right__subbtitle">{date}</h4>
             <div className="right__tracks">
               {tracks.map((item) => (
-                <div id={item.id} className="track-wrapper track">
+                <div id={item.id} key={item.id} className="track-wrapper track">
                   {tracks.length > 1 ? (
                     <h4 className="track__title">{item.title}</h4>
                   ) : (

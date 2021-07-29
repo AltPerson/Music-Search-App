@@ -87,3 +87,18 @@
     margin-top: 10px;
   }
 }
+
+.navbar-btn {
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 568px) {
+  .navbar-btn {
+    margin-top: 20px;
+  }
+}

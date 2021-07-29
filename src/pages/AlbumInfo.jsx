@@ -11,26 +11,27 @@ function AlbumInfo({ match }) {
     artistInfo: {},
     tracks: [],
   });
-  useEffect(() => {
+  const getData = () => {
     setIsLoading(true);
     fetchAlbumData(match.params.id).then((response) => {
-      setIsLoading(false);
-      setAlbumData({
-        albumInfo: response,
-        artistInfo: response.artist,
-        tracks: response.tracks.data,
-      });
+      if (!response.data.error) {
+        setIsLoading(false);
+        setAlbumData({
+          albumInfo: response.data,
+          artistInfo: response.data.artist,
+          tracks: response.data.tracks.data,
+        });
+      } else {
+        getData();
+      }
     });
+  };
+  useEffect(() => {
+    getData();
   }, []);
   return isLoading ? (
     <div className="contaier loader">
-      <Loader
-        type="Bars"
-        color="#e57439"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-      />
+      <Loader type="Bars" color="#e57439" height={100} width={100} />
     </div>
   ) : (
     <>
