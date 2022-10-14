@@ -1,0 +1,16 @@
+.infoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+
+.infoList-title {
+  text-align: center;
+}
+
+@media (max-width: 644px) {
+  .infoList {
+    justify-content: center;
+  }
+}
