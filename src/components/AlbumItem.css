@@ -14,6 +14,7 @@
 .right {
   text-align: center;
   flex-grow: 1;
+  color: white;
 }
 
 .right__title {
@@ -22,6 +23,7 @@
 }
 
 .right__subtitle {
+  text-transform: uppercase;
   font-size: 20px;
   margin: 5px;
 }

@@ -24,6 +24,7 @@
 .info__title {
   font-size: 25px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .info__subtitle {
