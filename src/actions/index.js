@@ -40,3 +40,47 @@ export function fetchAlbumData(id) {
     });
   return albumData;
 }
+
+export const getData = (data, query, setIsLoading, setData, fetchData) => {
+  if (data?.length === 0 && query?.length === 0) {
+    setIsLoading(true);
+    fetchData(query).then((response) => {
+      if (!response.data.error) {
+        setIsLoading(false);
+        setData(response.data.data);
+      } else {
+        getData(data, query, setIsLoading, setData, fetchData);
+      }
+    });
+  } else {
+    fetchData(query).then((response) => {
+      if (!response.data.error) {
+        setIsLoading(false);
+        setData(response.data.data);
+      } else {
+        getData(data, query, setIsLoading, setData, fetchData);
+      }
+    });
+  }
+};
+
+export const getAlbumData = (
+  setIsLoading,
+  setAlbumData,
+  fetchAlbumData,
+  albumId
+) => {
+  setIsLoading(true);
+  fetchAlbumData(albumId).then((response) => {
+    if (!response.data.error) {
+      setIsLoading(false);
+      setAlbumData({
+        albumInfo: response.data,
+        artistInfo: response.data.artist,
+        tracks: response.data.tracks.data,
+      });
+    } else {
+      getAlbumData(setIsLoading, setAlbumData, fetchAlbumData, albumId);
+    }
+  });
+};

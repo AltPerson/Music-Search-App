@@ -2,14 +2,11 @@ import "./Navbar.css";
 import { FaMusic } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { debounce } from "../actions/utils";
 
-export default function NavBar({
-  inputValue,
-  setInputValue,
-  isHome,
-  isSingle,
-  getData,
-}) {
+export default function NavBar({ setInputValue, isHome, isSingle }) {
+  const onChangeHandler = debounce(setInputValue, 300);
+
   return (
     <nav className="navbar">
       <Link
@@ -24,9 +21,8 @@ export default function NavBar({
           <div className="navbar-search search">
             <input
               type="search"
-              value={inputValue}
               className="search__input"
-              onChange={(e) => setInputValue(e.target.value)}
+              onChange={(e) => onChangeHandler(e.target.value)}
             />
             <BsSearch className="search__icon" />
           </div>
