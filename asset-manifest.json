@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/musicSPA/static/css/main.df8e6b68.chunk.css",
-    "main.js": "/musicSPA/static/js/main.f2af2968.chunk.js",
-    "main.js.map": "/musicSPA/static/js/main.f2af2968.chunk.js.map",
-    "runtime-main.js": "/musicSPA/static/js/runtime-main.3c5de291.js",
-    "runtime-main.js.map": "/musicSPA/static/js/runtime-main.3c5de291.js.map",
+    "main.js": "/musicSPA/static/js/main.e4d15b8a.chunk.js",
+    "main.js.map": "/musicSPA/static/js/main.e4d15b8a.chunk.js.map",
+    "runtime-main.js": "/musicSPA/static/js/runtime-main.914c5ebb.js",
+    "runtime-main.js.map": "/musicSPA/static/js/runtime-main.914c5ebb.js.map",
     "static/css/2.ab75b8d7.chunk.css": "/musicSPA/static/css/2.ab75b8d7.chunk.css",
-    "static/js/2.e6734923.chunk.js": "/musicSPA/static/js/2.e6734923.chunk.js",
-    "static/js/2.e6734923.chunk.js.map": "/musicSPA/static/js/2.e6734923.chunk.js.map",
+    "static/js/2.42b9322f.chunk.js": "/musicSPA/static/js/2.42b9322f.chunk.js",
+    "static/js/2.42b9322f.chunk.js.map": "/musicSPA/static/js/2.42b9322f.chunk.js.map",
     "index.html": "/musicSPA/index.html",
     "static/css/2.ab75b8d7.chunk.css.map": "/musicSPA/static/css/2.ab75b8d7.chunk.css.map",
     "static/css/main.df8e6b68.chunk.css.map": "/musicSPA/static/css/main.df8e6b68.chunk.css.map",
-    "static/js/2.e6734923.chunk.js.LICENSE.txt": "/musicSPA/static/js/2.e6734923.chunk.js.LICENSE.txt",
+    "static/js/2.42b9322f.chunk.js.LICENSE.txt": "/musicSPA/static/js/2.42b9322f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/musicSPA/static/media/bg2.597a1d5f.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.3c5de291.js",
+    "static/js/runtime-main.914c5ebb.js",
     "static/css/2.ab75b8d7.chunk.css",
-    "static/js/2.e6734923.chunk.js",
+    "static/js/2.42b9322f.chunk.js",
     "static/css/main.df8e6b68.chunk.css",
-    "static/js/main.f2af2968.chunk.js"
+    "static/js/main.e4d15b8a.chunk.js"
   ]
 }
