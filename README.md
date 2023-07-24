@@ -3,7 +3,8 @@
 Music Search App is a SPA which searchs music<br>
 It allows users to search music and listen short rigntone of it<br>
 ![image](https://user-images.githubusercontent.com/39427362/200375971-a2e8b325-0cd3-4654-94d6-223eb8760a18.png)
-![зображення_2023-07-25_005929114_iphone13blue_portrait](https://github.com/AltPerson/musicSPA/assets/39427362/a0f3758f-9c12-457d-966e-94e8a03d14f3)
+![MusicSPA](https://github.com/AltPerson/musicSPA/assets/39427362/b6055fc3-d4c8-4852-8a5d-c0c3357ca54c)
+
 
 ## USED TECHNIQUES<br>
 FRAMEWORK - React<br>
