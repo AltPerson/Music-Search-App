@@ -1,12 +1,12 @@
 .app {
-  font-family: "Roboto", sans-serif;
-  background: url("/src/img/bg2.webp") no-repeat fixed center center;
+  font-family: 'Roboto', sans-serif;
+  background: url('/src/img/bg2.webp') no-repeat fixed center center;
   background-size: cover;
   position: relative;
   min-height: 100vh;
 }
 .app:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;

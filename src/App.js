@@ -1,12 +1,12 @@
-import "./App.css";
-import Home from "./pages/Home";
-import AlbumInfo from "./pages/AlbumInfo";
+import './App.css';
+import Home from './pages/Home';
+import AlbumInfo from './pages/AlbumInfo';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 function App() {
   return (

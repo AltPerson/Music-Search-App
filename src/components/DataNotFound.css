@@ -1,0 +1,36 @@
+.no-data {
+  color: white;
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.no-data_header {
+  margin: 20px 0px;
+  font-size: 35px;
+}
+.no-data_action button {
+  font-size: 35px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #e57439;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.no-data_action button:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+  background-color: rgb(248, 131, 68);
+}
+
+@media only screen and (max-width: 720px) {
+  .no-data_header {
+    font-size: 20px;
+  }
+  .no-data_action button {
+    font-size: 20px;
+  }
+}

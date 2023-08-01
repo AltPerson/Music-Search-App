@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import { fetchAlbumData, getAlbumData } from "../actions";
-import AlbumItem from "../components/AlbumItem";
-import Loader from "react-loader-spinner";
+import React, { useState, useEffect } from 'react';
+import Navbar from '../components/Navbar';
+import { fetchAlbumData, getAlbumData } from '../actions';
+import AlbumItem from '../components/AlbumItem';
+import Loader from 'react-loader-spinner';
+import { DataNouFound } from '../components/DataNotFound';
 
 function AlbumInfo({ match }) {
   const [isLoading, setIsLoading] = useState(false);
+  const [noData, setNoData] = useState(false);
   const [albumData, setAlbumData] = useState({
     albumInfo: {},
     artistInfo: {},
@@ -13,13 +15,21 @@ function AlbumInfo({ match }) {
   });
 
   useEffect(() => {
-    getAlbumData(setIsLoading, setAlbumData, fetchAlbumData, match.params.id);
+    getAlbumData(
+      setIsLoading,
+      setAlbumData,
+      setNoData,
+      fetchAlbumData,
+      match.params.id,
+    );
   }, []);
 
   return isLoading ? (
     <div className="contaier loader">
       <Loader type="Audio" color="#e57439" height={100} width={100} />
     </div>
+  ) : noData ? (
+    <DataNouFound />
   ) : (
     <>
       <Navbar
