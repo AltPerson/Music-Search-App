@@ -11,7 +11,7 @@ It allows users to search music and listen short rigntone of it<br>
 FRAMEWORK - React<br>
 METHODS - ReactHooks(useState,useEffect),promise based HTTP client - axios<br>
 API - https://rapidapi.com/deezerdevs/api/deezer-1 (Dezeer API)
-## URL:https://altperson.github.io/musicSPA/<br>
+## URL:https://altperson.github.io/Music-Search-App/<br>
 ## BRANCHES<br>
 MASTER - Source code of Project<br>
 GH-PAGES - Builded version
